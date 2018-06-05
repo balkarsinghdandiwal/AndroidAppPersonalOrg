@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.balkarsinghdandiwal.personalorganisersystem.img"
+    tools:showIn="@layout/app_bar_img">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:tooltipText="Click to add image" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgView"
+        android:layout_width="320dp"
+        android:layout_height="420dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp" />
+
+</android.support.design.widget.CoordinatorLayout>

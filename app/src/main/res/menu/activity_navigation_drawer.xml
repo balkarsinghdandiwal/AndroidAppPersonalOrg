@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/AddFriends"
+            android:icon="@drawable/addfriend"
+            android:title="Add Friends" />
+        <item
+            android:id="@+id/ViewFriends"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="View Friends" />
+        <item
+            android:id="@+id/Addimage"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Assign image to friend" />
+        <item
+            android:id="@+id/AddEvents"
+            android:icon="@drawable/addevents"
+            android:title="Add Events" />
+        <item
+            android:id="@+id/ViewEvents"
+            android:icon="@drawable/calendar"
+            android:title="View Events" />
+
+    </group>
+
+</menu>

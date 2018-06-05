@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Personal Organiser System</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_navigation">navigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="pick_date">Date of Birth</string>
+    <string name="title_activity_addfriends">addfriends</string>
+    <string name="title_activity_viewfriends">viewfriends</string>
+    <string name="title_activity_editfriends">editfriends</string>
+    <string name="title_activity_addevents">addevents</string>
+    <string name="title_activity_view_events">ViewEvents</string>
+    <string name="title_activity_editevents">editevents</string>
+    <string name="title_activity_addimg">addimg</string>
+    <string name="title_activity_img">img</string>
+</resources>

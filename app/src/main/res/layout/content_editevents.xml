@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.balkarsinghdandiwal.personalorganisersystem.editevents"
+    tools:showIn="@layout/app_bar_editevents">
+
+    <TableLayout
+        android:id="@+id/add_table"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="40dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/deleteEvent"
+        app:layout_constraintRight_toRightOf="@+id/deleteEvent"
+        android:layout_marginTop="38dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editevent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="49dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:text="Date"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/ddate"
+                android:layout_width="183dp"
+                android:layout_height="48dp"
+                android:digits="0123456789"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="66dp"
+                android:layout_height="32dp"
+                android:text="Time"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ttime"
+                android:layout_width="183dp"
+                android:layout_height="45dp"
+                android:digits="0123456789"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="120dp"
+                android:layout_height="31dp"
+                android:text="Location"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp"
+
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="183dp"
+                android:layout_height="45dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/deleteEvent"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="25dp"
+        android:text="Delete Event"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="146dp" />
+
+    <Button
+        android:id="@+id/editevent"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="5dp"
+        android:text="Update Event"
+        app:layout_constraintRight_toLeftOf="@+id/deleteEvent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/add_table" />
+</android.support.constraint.ConstraintLayout>
